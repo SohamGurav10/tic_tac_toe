@@ -1,0 +1,12 @@
+# Force GitHub to detect only Dart code
+*.dart linguist-detectable=true
+*.dart linguist-language=Dart
+
+# Mark other platform files as not detectable
+*.swift linguist-detectable=false
+*.java linguist-detectable=false
+*.kt linguist-detectable=false
+*.cpp linguist-detectable=false
+*.h linguist-detectable=false
+*.mm linguist-detectable=false
+*.m linguist-detectable=false
