@@ -1,12 +1,11 @@
-# Force GitHub to detect only Dart code
-*.dart linguist-detectable=true
-*.dart linguist-language=Dart
+# Tell GitHub Linguist to not count these as repo languages
+android/** linguist-vendored
+ios/** linguist-vendored
+linux/** linguist-vendored
+windows/** linguist-vendored
+macos/** linguist-vendored
+web/** linguist-vendored
 
-# Mark other platform files as not detectable
-*.swift linguist-detectable=false
-*.java linguist-detectable=false
-*.kt linguist-detectable=false
-*.cpp linguist-detectable=false
-*.h linguist-detectable=false
-*.mm linguist-detectable=false
-*.m linguist-detectable=false
+# Ignore CMake files
+CMakeLists.txt linguist-vendored
+*.cmake linguist-vendored
